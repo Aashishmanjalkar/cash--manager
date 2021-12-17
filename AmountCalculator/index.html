@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe Day</title>
+    <link rel="stylesheet" href="amount.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <h2>this is coffee day shop</h2> -->
+       <nav class="navbar">
+           <div class="brand-title">
+               <img src="icons8-coffee-64.png" alt="" srcset="">
+            Coffee Mania    
+           </div>
+           <div class="navbar-links">
+               <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+               </ul>
+           </div>
+           <a href="#" class="toggle-button">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+           </a>
+       </nav>
+
+       <h1>Cash Manager</h1>
+        <div class="section">
+            <div class="box1">
+                <label id="label1" for="">Enter the Amount Received </label>
+                <input type="number" name="" id="number">
+                <br>
+                <label id="label2" for="">Enter the Bill Amount </label>
+                <input type="number" name="" id="number2">
+                <br>
+                <button type="submit" id="submit">Submit</button>     
+            </div>
+            <div class="login">
+                <!-- <img src="shop.png" alt="" srcset="" > -->
+                <h2 id="header"> <img src="shop.png" alt="" srcset=""> Coffee Mania!</h2>
+                <div class="username">
+                    <input type="text" name="" id="name" placeholder="Enter the User Name">
+                </div>
+                <div class="password">
+                    <input type="password" value="" id="password" placeholder="Enter the password">
+                </div>
+                <button id = "login" type="submit">Login </button>
+            </div>
+        </div>
+
+        <div class="section2">
+            <div class="box2">
+                <!-- <h1>the marvelous hotel</h1> -->
+                <div id="amount">The Remaining Amount is Rs <span></span> </div>
+            </div>
+            <div class="box3">
+                <!-- <div id="hun">100 <br> <span></span></div> -->
+                <table>
+                    <tr>
+                        <th>2000</th>
+                        <th>500</th>
+                        <th>100</th>
+                        <th>50</th>
+                        <th>20</th>
+                        <th>10</th>
+                        <th>5</th>
+                        <th>2</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <td class="no-of-notes">0</td>
+                        <td class="no-of-notes">0</td>
+                        <td class="no-of-notes">0</td>
+                        <td class="no-of-notes">0</td>
+                        <td class="no-of-notes">0</td>
+                        <td class="no-of-notes">0</td>
+                        <td class="no-of-notes">0</td>
+                        <td class="no-of-notes">0</td>
+                        <td class="no-of-notes">0</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="section3">
+            <div id="footer">CopyRight @ www.cafeDay.com</div>
+        </div>
+
+
+    </div>
+    <script src="amount.js"></script>
+</body>
+
+</html>

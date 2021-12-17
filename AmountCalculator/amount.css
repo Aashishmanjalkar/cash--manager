@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* background: cornsilk; */
+    /* background: url('background.jpg') no-repeat center center/cover; */
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url('pexels-toni-cuenca-585750.jpg') no-repeat center center/cover;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background: black;
+}
+.brand-title{
+    font-size: 2rem;
+    margin: 4px 10px;
+    color:white
+}
+.navbar-links{
+
+}
+.navbar-links ul{
+    display: flex;
+}
+.navbar-links ul li{
+    margin: 23px 8px;
+    font-size: 1rem;
+}
+.navbar-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 10px 10px;
+}
+.navbar-links ul li a:hover{
+    font-size: 1.5rem;
+}
+.toggle-button{
+    position: absolute;
+    display: none;
+    top: 1rem;
+    right: 1rem;
+    height: 32px;
+    justify-content: space-between;
+    width: 22px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width:100%;
+    background-color: white;
+    border-radius: 10px;
+}
+span{
+    margin: 2px 8px;
+    padding: 2px 2px;
+    font-size: 25px;
+    display: none;
+}
+h1{
+    margin: 14px 35px;
+    color: white;
+    font-size: 2.5rem;
+}
+
+
+
+.box1{
+    padding: 4%;
+    margin-top: 1px;
+}
+.box1 label{
+    font-size: 25px;
+    font-weight: bold;
+   
+}
+#label1{
+    margin: 2px 2px;
+}
+#label2{
+    margin-right: 58px;
+}
+#number{
+    padding: 7px 18px;
+    margin-left: 28px;
+    border: 2px solid black;
+    margin-bottom: 25px;
+}
+#number2{
+    padding: 7px 18px;
+    margin-left: 28px;
+    border: 2px solid black;
+}
+.section{
+    display: flex;
+}
+
+
+.login{
+    margin: 2px 116px;
+    /* border-bottom : 2px solid black; */
+
+}
+.username{
+    margin: 4px 4px;
+    padding: 7px 16px;
+    color: white;
+    /* width: 100%; */
+}
+.password{
+    margin: 4px 4px;
+    padding: 7px 16px;
+    color: white;
+}
+#name{
+    background: none;
+    padding: 5px 41px;
+    border: none;
+    font-size: 17px;
+    color:white;
+    border-bottom : 2px solid white;
+}
+::placeholder{
+    color: white;
+}
+#password{
+    background: none;
+    padding: 5px 41px;
+    border: none;
+    font-size: 17px;
+    color: white;
+    border-bottom : 2px solid white;
+}
+.password{
+    margin: 4px 4px;
+    padding: 7px 16px;
+}
+#header{
+    font-size: 41px;
+    border-bottom: 2px solid white;
+    color: white;
+
+}
+#login{
+    margin: 4px 55px;
+    padding: 9px 25px;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+}
+#login:hover{
+    opacity: 0.9;
+    background-color: white;
+    color: red;
+}
+#submit{
+    padding: 5px 32px;
+    margin: 44px 280px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px 0 25px 0;
+    cursor: pointer;
+}
+#submit:hover{
+    opacity: 0.9;
+    background-color:lavender;
+}
+#amount{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 71px;
+}
+.box2 {
+    padding-left: 4%;
+}
+.box3{
+    padding-left: 3%;
+    margin-top: 2%;
+
+}
+
+
+table, th, td {
+    border: 1px solid blue;
+    padding: 10px 10px;
+    margin: 4px 4px;
+    width: 1000px;
+    background-color: cornsilk;
+  }
+  
+.section3{
+    display: flex;
+    justify-content: center;
+    margin: 5px 2px;
+}
+#footer{
+   
+    color: white;
+    /* margin: 150px; */
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+@media only screen and (max-width:700px) {
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+ 
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+    span{
+        display: block;
+    }
+    
+    .box1{
+
+    }
+    #label1{
+        font-size: 19px;
+    }
+    #number{
+        margin: 3px 4px;
+        padding: 2px 2px;
+    }
+    #label2{
+        font-size: 19px;
+        margin-right: 46px;
+    margin-left: 2px;
+    }
+    #number2{
+        margin: 3px 4px;
+        padding: 2px 2px;
+    }
+    #submit{
+        margin: 8px 10px;
+        padding: 3px 16px;
+    }
+    
+    .box3{
+        margin: 10px -4px;
+    }
+    table, th, td {
+        margin: 23px 2px;
+        padding: 8px 8px;
+        width: 19%;
+    }
+    .section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .box1{
+        margin: 2px 41px;
+        padding: 2px 2px;
+    }
+    .login{
+        margin: 14px 14px;
+        padding: 2px 2px;
+    }
+    .login h2 img{
+        height: 40px;
+        width: 40px;
+    }
+    
+    #header{
+        font-size: 19px;
+        width: 50%;
+        margin-left: 28px;
+    }
+    .username{
+        margin: 2px 2px;
+        padding: 2px 2px;
+        margin-left: 28px;
+    }
+    #name{
+        margin: 2px 2px;
+        padding: 2px 2px;
+    }
+    .password{
+        margin: 2px 2px;
+        padding: 2px 2px;
+        margin-left: 28px;
+    }
+    #password{
+        margin: 2px 2px;
+        padding: 2px 2px;
+    }
+    #login{
+        margin: 2px 7px;
+    padding: 7px 25px;
+    font-size: 10px;
+    margin-left: 28px;
+
+    }
+    #amount{
+        color: white;
+        margin: 25px 7px;
+        padding: 2px 2px;
+        font-size: 22px;
+    }
+    .section2{
+        margin-top: 10px;
+    }
+
+}
